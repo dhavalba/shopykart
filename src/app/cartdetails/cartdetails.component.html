@@ -19,7 +19,7 @@
           <tr *ngFor="let item of getCartDetails; let i = index">
             <th scope="row">{{i+1}}</th>
             <td>{{item.title}}</td>
-            <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
+            <td><img style="width: 120px;" src="./assets/images/{{item.image}}" alt=""></td>
             <td style="width: 25%;">{{item.description}}</td>
             <td style="width: 12%;"> <span><i class="fa fa-inr" aria-hidden="true"></i></span> {{item.price}}</td>
             <td>
