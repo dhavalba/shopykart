@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
         if(a.category === "men's clothing" || a.category === "women's clothing") {
           a.category = "fashion"
         }
-        Object.assign(a,{quantity: 1, total: a.price}); // remove this if using db.json
+        // Object.assign(a,{quantity: 1, total: a.price}); // remove this if using db.json
       });
       console.log(this.productArray)
     });
