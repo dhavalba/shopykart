@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="card-top">
+    <ul class="card-top-ul">
+      <li>
+        <a (click)="filter('')">
+          <img src="../../assets/images/special-offers.png" class="img-fluid pr-img">
+        <p>All Products</p>
+        </a>
+      </li>
+      <li>
+        <a  (click)="filter('electronics')">
+          <img src="../../assets/images/Electronic.png" class="img-fluid pr-img">
+        <p>Electronics</p>
+      </a>
+      </li>
+      <li>
+        <a (click)="filter('jewelery')">
+          <img src="../../assets/images/jewellary.jpg" class="img-fluid pr-img">
+        <p>jewelery</p>
+      </a>
+      </li>
+      <li>
+        <a (click)="filter('fashion')">
+          <img src="../../assets/images/cloths.png" class="img-fluid pr-img">
+        <p>Fashion</p>
+      </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- card top ends here -->
+<div class="container">
+  <div class="row">
+   <ng-container *ngFor="let item of filterCategory | filter:searchKey: 'title'">
+    <div class="card col-md-3" routerLink="/viewdetails/{{item.id}}">
+      <img src="{{item.image}}" alt="" class="item-img">
+      <h5 class="item-title">{{item.title}}</h5>
+      <p class="item-desc">{{item.description}}</p>
+      <p class="item-desc">{{item.category}}</p>
+      <p><strong>Price:</strong>${{item.price}}</p>
+      <button class="btn btn-primary" (click)="addtocart(item)">Add to cart</button>
+    </div>
+   </ng-container>
+  </div>
+</div>
+
+<app-footer></app-footer>

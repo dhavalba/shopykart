@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+ul li {
+  list-style: none;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+ul {
+  padding-left: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.pr-img {
+  margin-bottom: 10px;
+  width: 64px;
+  height: 64px;
+}
+.card-top-ul {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3d1d1;
+}
+.card-top-ul li {
+  margin-right: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-btn:active {
+  border: 1px solid;
+}
+.filter-btn:focus {
+  border: 1px solid;
+}
+/* .card-top-ul li a:focus p{
+  color: #1b1be8;
+} */
+.card-top-ul li:last-child {
+  margin-right: 0;
+}
+.card-top-ul li p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0;
+}
+.item-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+}
+.item-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+}
+.item-img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+  object-fit: cover;
+}
+.item-img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.card {
+  padding: 20px;
+  margin: 20px;
+}
+.cart-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count-btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background-color: #0069d9;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.cart-counter p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pro-card {
+  border: 1px solid #b8b4b4;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.prod.card {
+  margin: 15px 0;
+}
+.prod-container {
+  padding-bottom: 60px;
+}
+/* header css */
+@media only screen and (max-width: 991px) {
+  .card {
+    padding: 10px;
+  }
+  .prod.card {
+    /* margin: 10px; */
+  }
+  .item-img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .prod.card {
+    margin: 15px 0 0 0;
+  }
+  .prod-side {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-top-ul li p {
+    font-size: 12px;
+  }
+  .card-top-ul {
+    padding-bottom: 10px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  table td {
+    font-size: 12px;
+  }
+}
+

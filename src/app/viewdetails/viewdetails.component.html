@@ -1,0 +1,30 @@
+<app-newheader></app-newheader>
+<div class="container prod-container mt-3">
+  <div class="row">
+    <div class="col-md-4">
+      <img src ="{{data.image}}" class="img-fluid">
+    </div>
+    <div class="col-md-8 prod-side">
+      <div class="detail-view">
+        <ul class="detail-view_ul">
+          <li class="details-view__li">
+            <p class="de-title"><strong>Product Name:</strong> <span class="de-title-span">{{data.title}}</span></p>
+          </li>
+          <li class="details-view__li">
+            <p class="de-title"><strong>Product Description:</strong> <span class="de-title-span">{{data.description}}</span></p>
+          </li>
+          <li class="details-view__li">
+            <p class="de-title"><strong>Price:</strong>  <span class="de-title-span pl-2"> <i class="fa fa-inr" aria-hidden="true"></i>  {{data.price}}</span></p>
+          </li>
+          <li class="details-view__li">
+            <p class="de-title"><strong>Category: </strong> <span class="de-title-span">{{data.category}}</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-12 mt-3">
+      <button class="back-btn btn btn-primary" routerLink="/home">Back</button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,21 @@
+.cart-card {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.empty-cart-img {
+  width: 275px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.cart-product {
+  border: 1px solid #ededed;
+}
