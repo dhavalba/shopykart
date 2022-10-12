@@ -10,8 +10,8 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProduct() {
-    // return this.http.get<any>("https://fakestoreapi.com/products")
-    return this.http.get<any>("http://localhost:3000/products")
+     // return this.http.get<any>("http://localhost:3000/products")
+    return this.http.get<any>("https://fakestoreapi.com/products")
     .pipe(map((res:any) => {
       return res;
     }))
@@ -25,15 +25,15 @@ export class ApiService {
   }
 
   getProductIn() {
-    // return this.http.get<any>("https://fakestoreapi.com/products")
-    return this.http.get<any>("http://localhost:3000/productArray")
+     // return this.http.get<any>("http://localhost:3000/productArray")
+    return this.http.get<any>("https://fakestoreapi.com/products")
     .pipe(map((res:any) => {
       return res;
     }))
   }
   getOneIn(id: any) {
-    // return this.http.get<any>("https://fakestoreapi.com/products/"+ id)
-    return this.http.get<any>("http://localhost:3000/productArray/"+ id)
+     // return this.http.get<any>("http://localhost:3000/productArray/"+ id)
+    return this.http.get<any>("https://fakestoreapi.com/products/"+ id)
     .pipe(map((res:any) => {
       return res;
     }))
